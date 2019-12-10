@@ -15,13 +15,13 @@ const addButton = function (){
     const image = $("<img>").attr("src",chrome.extension.getURL('search-sender.png'))
     const button = $("<button>").addClass("ext-email-button").html(image    ).click(onClickButton.bind(null,email))
     $("body .go").parent().parent().append(button)
-    console.log("added")
+   
 }
 window.addButton = addButton
 const callback = function(mutationsList, observer) {
     if($("body .go").length >0) {
         if($("body .go").parent().parent().find("button").length ==0) {
-            console.log("adding")
+           
             addButton()
         }
  }
