@@ -1,0 +1,22 @@
+{
+    "name": "Search Sender",
+    "description" : "Extension that adds a button in gmail's message view to search emails from that sender",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": { "scripts": ["hot-reload.js"] },
+    "web_accessible_resources": ["search-sender.png"],
+    "icons": {
+      "16": "search-sender.png",
+      "32": "search-sender.png",
+      "48": "search-sender.png",
+      "128": "search-sender.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*"],
+        "css":["style.css"],
+        "js": ["jquery.js","content.js"]
+      }
+    ]
+  
+  }

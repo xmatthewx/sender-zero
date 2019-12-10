@@ -1,0 +1,21 @@
+.ext-email-button{
+    height: 40px;
+    background:none;
+    box-shadow: none;
+    border:none;
+    overflow: visible;
+    position: relative;
+    vertical-align: top;
+    width: 36px;
+    margin-left: 5px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.ext-email-button:hover > img{
+    opacity: .5;
+}
+.ext-email-button img{
+    width:100%;
+    transition: opacity all ease .7s
+
+}
